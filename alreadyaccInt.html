@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+
+    .header .title {
+      color: #ff1049;
+      font-weight: 600;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header .title img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .header .subtitle {
+      background-color: #ff005c;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+    }
+
+    .container {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: #fff;
+      padding: 40px 60px;
+      border-radius: 15px;
+      text-align: center;
+      position: relative;
+      width: 600px;
+    }
+
+    .container::before, .container::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      background-color: #00d1ff;
+      top: -10px;
+      left: 10px;
+      transform: rotate(45deg);
+    }
+
+    .container::after {
+      top: auto;
+      bottom: -10px;
+      right: 10px;
+      left: auto;
+      background-color: #ff003d;
+    }
+
+    .content img {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .content .description {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .content .link {
+      color: rgba(0, 209, 255, 1);
+      text-decoration: none;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .buttons .btn {
+      padding: 10px 30px;
+      border: 2px solid;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .buttons .btn-yes {
+      background-color: #fff;
+      color: #ff1049;
+      border-color: #ff1049;
+    }
+
+    .buttons .btn-yes:hover {
+      background-color: #ff1049;
+      color: #fff;
+    }
+
+    .buttons .btn-no {
+      background-color: #fff;
+      color: #00d1ff;
+      border-color: #00d1ff;
+    }
+
+    .buttons .btn-no:hover {
+      background-color: #00d1ff;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .header .subtitle {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+
+      .container {
+        width: 90%;
+        padding: 20px 30px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .buttons .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/92bd721cd59591ddf9eb5697dc93069b39023bace9cc0a88fd60598d2f5f7d94?apiKey=e08612ad9f3441bf8802a2edb79ea044&" alt="Logo">
+      AUTO <span style="color: #00d1ff;">HIRE</span>
+    </div>
+    <div class="subtitle">INTERVIEWER</div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/92bd721cd59591ddf9eb5697dc93069b39023bace9cc0a88fd60598d2f5f7d94?apiKey=e08612ad9f3441bf8802a2edb79ea044&" alt="Profile Picture">
+      <div class="description">
+        Already have a <a href="#" class="link">user account</a>
+      </div>
+    </div>
+    <div class="buttons">
+      <a href="usersignup.html" class="btn btn-yes">Yes</a> <!-- Replace 'yes_destination_page_url_here' with the actual URL of the destination page for "Yes" button -->
+      <a href="candidateSignin.html" class="btn btn-no">NO</a> <!-- Replace 'no_destination_page_url_here' with the actual URL of the destination page for "No" button -->
+    </div>
+  </div>
+</body>
+</html>
+

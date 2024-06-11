@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aut Hire</title>
+  <style>
+    body {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .container {
+      background-color: #fff;
+      border: 3px solid #ff003d;
+      border-radius: 30px;
+      width: 80%;
+      max-width: 1080px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header .logo {
+      color: #ff1049;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+    }
+
+    .header .question {
+      color: #150b3a;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .question-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .question-text {
+      flex-grow: 1;
+      margin-right: 20px;
+    }
+
+    .question-text .difficulty {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid rgba(130, 71, 255, 0.2);
+      border-radius: 8px;
+      padding: 6px;
+    }
+
+    .difficulty-icon {
+      color: #8247ff;
+      font-size: 18px;
+    }
+
+    .difficulty-text {
+      color: #ee7759;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.96px;
+    }
+
+    .question-prompt {
+      color: #150b3a;
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    .highlight {
+      color: #00d1ff;
+    }
+
+    .next-button {
+      display: inline-block;
+      padding: 10px 30px;
+      border: 1px solid #00d1ff;
+      border-radius: 10px;
+      color: #00d1ff;
+      text-align: center;
+      font-size: 16px;
+      text-decoration: none;
+      margin-top: 20px;
+      align-self: flex-start;
+      cursor: pointer;
+    }
+
+    .timer {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timer-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .timer-text {
+      font-size: 18px;
+      font-weight: 600;
+      color: #150b3a;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -10px; /* Adjust this value to move the image up or down */
+    }
+
+    .skills img {
+      width: 150px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">AUT HIRE</div>
+      <div class="question">Q (1/20)</div>
+    </div>
+    <div class="content">
+      <div class="question-box">
+        <div class="question-text">
+          <div class="difficulty">
+            <div class="difficulty-icon">👋</div>
+            <div class="difficulty-text">EASY</div>
+          </div>
+          <div class="question-prompt">
+            React is used for frontend (a <span class="highlight">library</span> of language)
+          </div>
+        </div>
+        <div class="timer">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/74b21bf3a26d0872ab454c1615c32038c067cb291756b85f26b6f5f1113167ae?apiKey=e08612ad9f3441bf8802a2edb79ea044&" alt="Timer Icon" class="timer-icon">
+          <div class="timer-text">42 sec remaining</div>
+        </div>
+      </div>
+      <a href="lastpage.html" class="next-button">Next</a> <!-- Update the href to the correct link -->
+      <div class="skills">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d8800bfd135b09b9d0a3ca419d1b29b7c4011d3e37e9fb7ec5f53e56c39598f?apiKey=e08612ad9f3441bf8802a2edb79ea044&" alt="Skills">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
